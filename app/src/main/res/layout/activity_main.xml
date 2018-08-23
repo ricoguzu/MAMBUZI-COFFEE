@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/coffee"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO MAMBUZI"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="16dp"
+        />
+    <Button
+        android:id="@+id/number_of_cups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="ADD CUPS"
+        android:textStyle="italic"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="16dp"
+        android:onClick="addCups"
+        />
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="CUPS"
+        android:textStyle="bold"
+        android:background="@android:color/holo_green_light"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="PRICE"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/reduceCups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="REDUCE CUPS"
+        android:textStyle="italic"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="16dp"
+        android:onClick="reduceCups"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+    <RadioButton
+        android:id="@+id/white_coffee_radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:text="White Coffee"
+        android:textColor="@android:color/holo_blue_dark"
+        android:onClick="onRadioButtonClicked"
+        />
+    <RadioButton
+        android:id="@+id/black_coffee_radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Black Coffee"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:onClick="onRadioButtonClicked"
+
+        />
+    </RadioGroup>
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="SUBMIT ORDER"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:onClick="feedback"
+        />
+
+</LinearLayout>
+
+</ScrollView>
